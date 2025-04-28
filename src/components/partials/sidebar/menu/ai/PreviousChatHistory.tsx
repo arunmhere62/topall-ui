@@ -148,7 +148,7 @@ const PreviousChatHistory = () => {
           Previous Chat History
         </AccordionTrigger>
 
-        <AccordionContent className="scrollbar-hide mt-2 max-h-[200px] overflow-y-scroll border-0 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-500 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 [&::-webkit-scrollbar-track]:bg-gray-200 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar]:w-1">
+        <AccordionContent className="bg-white px-2 py-2 scrollbar-hide mt-2 max-h-[200px] overflow-y-scroll border-0 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-gray-500 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 [&::-webkit-scrollbar-track]:bg-gray-200 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar]:w-1">
           {loading ? (
             <p className="text-sm italic text-gray-500">Loading...</p>
           ) : chatHistory.length === 0 ? (
@@ -168,7 +168,7 @@ const PreviousChatHistory = () => {
                       );
                     }
                   }}
-                  className="cursor-pointer rounded-lg border bg-slate-100 px-2 py-1.5 hover:bg-accent"
+                  className="cursor-pointer rounded-lg px-2 py-1 hover:bg-accent"
                 >
                   <p className="flex items-center gap-2 text-[15px]">
                     <ChevronRight className="h-4 w-4" />
